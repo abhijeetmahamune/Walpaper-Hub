@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="myscript.js" ></script>
+
+    <style>
+        
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+            background-color: #ffffff;
+
+        }
+        
+        hr{
+            color: rgb(151, 0, 0);
+            background-color: rgb(151, 0, 0);
+            height: 5px;
+        }
+        li,a,button{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+            font-weight: 500;
+            font-size: 16px;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding : 30px 10%;
+            border: solid rgb(151, 0, 0) 5px;
+            border-radius: 100px;
+            box-shadow: rgba(151, 0, 0, 0.758) 10px 10px 15px;
+        }
+        #a1{
+            align-items: center;
+            border: 30cm;
+            gap: 10px;
+
+        }
+        #div1{
+            text-align: center;
+            background-color: rgb(20, 3, 3);
+            border: 5px;
+            offset-distance: 5px;
+            gap: 10px;
+
+        }
+        .a1 {
+            
+          align-items: center;
+            border: none;
+            color: white;
+        }
+        
+        li{
+            border: #24252A ;
+        }
+        .logo{
+            cursor: pointer;
+        }
+        .nav_links{
+            display: inline block;
+            list-style: none;
+            size: 20ch;
+
+        }
+        .nav_links li{
+            display: inline-flex;
+            padding: 0px 20px;
+        }
+        .nav_links li a{
+            transition: all 0.3 ease 0s;
+        }
+        .nav_links li a:hover{
+            color: #0088a9;
+        }
+        button{
+            padding: 9px 25px;
+            color: rgb(151, 0, 0);
+            border-color: rgb(151, 0, 0);
+            border-width: 3px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.3 ease 0s;
+        }
+        button:hover{
+            color: #ffffff;
+            background-color:rgb(151, 0, 0) ;
+            box-shadow:  rgba(151, 0, 0, 0.715) 3px 3px 5px;
+        }
+        .divs {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            color:rgb(151, 0, 0);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        @media screen and (max-width:600px) {
+            .divs{
+                flex-direction: column;
+            }
+        }
+        h3{
+            background-color: #ffffff;
+           
+        }
+
+
+        .btn {
+            background-color: rgb(255, 255, 255);
+             color: rgb(0, 0, 0);
+             padding: 10px 20px;
+            cursor: pointer;
+             font-size: 15px;
+                 background-color: white;
+                 
+            }
+            .btn:hover {
+                 color: rgb(0, 0, 0);
+                 background-color: rgb(255, 224, 224);
+            }
+            .imgs{
+                width: 300px;
+                height: 200px;
+                
+            box-shadow:  rgb(151, 0, 0) 5px 5px 15px;
+            }
+    </style>
+
+<script>
+    function darkmode(){
+        document.bgColor(black);
+    }
+</script>
+
+</head>
+<body><br>
+    
+    <header>
+        <img class ="logo" src="icon/logo1.png" alt="logo"width="100">
+     <nav>
+        <div class="nav">
+            <ul class="nav_links">
+                <li><a href="mainpage.html"> <button>MAIN</button> </a></li>
+                <li><a href="ringtone.html"> <button>AUDIO/RINGTONES</button> </a></li>
+                <li><a href="mobile.html"> <button>MOBILE</button> </a></li>
+                <li><a href="desktop.html"> <button>DESKTOP/LAPTOPS</button> </a></li>
+            </ul>
+        </div>
+     </nav>
+          <a class ="cta" href="https://sites.google.com/view/abhijeetmahamune/home?fbclid=PAAaYMhp9jIoy3GWjQwO9GP16_X_EVfsJX31mMpWFDXVkg4n10jZycpBrmRcg"><button>ABOUT</button></a>
+    </header><br><br>
+    <div class="divs">   
+        <a class="btn" href="audio/kgf.mp3" download="kgf">
+       
+            <h3>KGF soundtrack Instrumental MP3</h3>
+        <br>
+        <img src="images/kgf bgm.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/kgf.mp3" controls > </audio>
+        <br><br>
+            <button class="download" onclick="downoad='kgf.mp3'">
+                <i class="fa fa-download"></i>
+                Download
+            </button> 
+        </a>
+
+
+        <a class="btn" href="audio/Ram Siya Ram - No Copyright - Sachet Tondon ! Hindi.mp3" download="Ram Siya Ram - No Copyright - Sachet Tondon ! Hindi">
+        <h3>Ram Siya Ram Lofi MP3</h3>
+        <br>
+        <img src="images/ram siya ram.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/Ram Siya Ram - No Copyright - Sachet Tondon ! Hindi.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a>   
+        
+        
+        <a class="btn" href="audio/Rolex - Vikram ! BGM.mp3" download="">
+        <h3>Vilram Rolex BGM MP3</h3>
+        <br>
+        <img src="images/vikram rolex.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/Rolex - Vikram ! BGM.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a>
+        </div>
+    <div class="divs">
+        <a class="btn" href="audio/Tokyo Drift X Temperature Remix.mp3" download="">
+        <h3>Tokyo Drift X Temperature Remix.mp3</h3>
+        <br>
+        <img src="images/tokyodritft1.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/Tokyo Drift X Temperature Remix.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a>    
+        <a class="btn" href="audio/TOKYO DRIFT.mp3" download="">         
+        <h3>TOKYO DRIFT.mp3</h3>
+        <br>
+        <img src="images/tokyodrift2.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/TOKYO DRIFT.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a>
+        <a class="btn" href="audio/Ram Siya Ram ! Remix ! Hindi Devotional Song.mp3" download="">             
+        <h3>Ram Siya Ram ! Remix ! <br> Hindi Devotional Song.mp3</h3>
+        <br>
+        <img src="images/ram siya ram.jpg"class="imgs"">
+        <br><br>
+        <audio src="audio/Ram Siya Ram ! Remix ! Hindi Devotional Song.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a>
+    </div>    
+    <div class="divs">
+        <a class="btn" href="audio/Attitude - English ! Bgm.mp3" download="">
+        <h3>Attitude - English ! Bgm.mp3</h3>
+        <br>
+        <img src="images/attitude.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/Attitude - English ! Bgm.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a> 
+        <a class="btn" href="audio/Basti Ka Hasti - Mcstan.mp3" download="">         
+        <h3>Basti Ka Hasti - Mcstan.mp3</h3>
+        <br>
+        <img src="images/basti ka hasti.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/Basti Ka Hasti - Mcstan.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a>           
+        
+        <a class="btn" href="audio/COFFIN - BGM.mp3" download=""><h3>COFFIN - BGM.mp3</h3>
+        <br>
+        <img src="images/coffin dance.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/COFFIN - BGM.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a>       
+        
+    </div>
+    <div class="divs">  
+        <a class="btn" href="audio/Divine - 3:59 AM.mp3" download="">
+            <h3>Divine - 3!59 AM.mp3</h3>
+        <br>
+        <img src="images/divine.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/Divine - 3!59 AM.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a>        
+       
+        <a class="btn" href="audio/Har Har Shambhu Shambhu Shiv Mahadeva.mp3" download="">
+             <h3>Har Har Shambhu Shambhu <br> Shiv Mahadeva.mp3</h3>
+        <br>
+        <img src="images/hara hara.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/Har Har Shambhu Shambhu Shiv Mahadeva.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a>     
+        <a class="btn" href="audio/Hollywood Webseries - Money heist ! BGM.mp3" download="">       
+        <h3>Hollywood Webseries <br> - Money heist ! BGM.mp3</h3>
+        <br>
+        <img src="images/money hiest.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/Hollywood Webseries - Money heist ! BGM.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a>
+    </div>  
+    <div class="divs">
+        <a class="btn" href="audio/Joker - Attitude - Bgm ! English.mp3" download="">
+            <h3>Joker - Attitude - Bgm ! English.mp3</h3>
+        <br>
+        <img src="images/joker.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/Joker - Attitude - Bgm ! English.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a>            
+        
+        <a class="btn" href="audio/Pirates BGM - Hollywood BGM.mp3" download="">
+        <h3>Pirates BGM - Hollywood BGM.mp3</h3>
+        <br>
+        <img src="images/pirate.jpg" class="imgs">
+        <br><br>
+        <audio src="audio/Pirates BGM - Hollywood BGM.mp3" controls > </audio>
+        <br><br>
+        <button class="download">
+            <i class="fa fa-download"></i>
+            Download
+        </button>
+        </a>  
+        <a class="btn" href="audio/Thukra Ke Mera Pyar Mera Intakam Dekhegi - Mera Intkam Dekhegi ! Hindi.mp3" download="">            
+            <h3>Thukra Ke Mera Pyar <br> Mera Intakam Dekhegi <br> ! Hindi.mp3</h3>
+            <br>
+            <audio src="audio/Thukra Ke Mera Pyar Mera Intakam Dekhegi - Mera Intkam Dekhegi ! Hindi.mp3" controls > </audio>
+            <br><br>
+            <button class="download">
+                <i class="fa fa-download"></i>
+                Download
+            </button>
+        </a>
+        <br>
+    
+    </div> <br><hr><br>
+</body>
+</html>

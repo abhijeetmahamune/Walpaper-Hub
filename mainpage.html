@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="myscript.js" ></script>
+    
+
+    <style>
+        .maintext {
+            position: absolute;
+            top: 8px;
+            left: 50px;
+            font-size: 150px;
+            color: white;
+            padding: 60px;
+            size: relative;
+            text-shadow: #000 10px 10px 10px;
+            transition: all 0.5s ease-in-out 0.5s;
+        }
+
+        .maintext:hover {
+            text-indent: 10%;
+        }
+
+        .btn1 {
+            position: absolute;
+            top: 300px;
+            left: 1000px;
+            border: solid 5px;
+            padding: 30px;
+            border-radius: 40px;
+            color: rgb(196, 255, 197);
+            font-size: large;
+            background-color: rgb(0, 36, 1);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn1:hover {
+            text-shadow: black 5px, 5px, 3px;
+            background-color: rgb(196, 255, 197);
+            color: rgb(0, 36, 1);
+        }
+
+        .dwnld {
+            width: 100px;
+            position: relative;
+            border: solid 2px;
+            padding: 3px;
+            border-radius: 2px;
+            color: rgb(196, 255, 197);
+            background-color: rgb(0, 36, 1);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            background-color: black;
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 20px;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .text {
+                font-size: 11px
+            }
+
+            .maintext {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                font-size: 30px;
+                color: white;
+                padding: 60px;
+                size: relative;
+                text-shadow: #000 10px 10px 10px;
+                transition: all 0.5s ease-in-out 0.5s;
+                box-sizing: inherit;
+            }
+
+            .btn1 {
+                position: absolute;
+                top: 300px;
+                left: 50px;
+                border: solid 5px;
+                padding: 3px;
+                border-radius: 10px;
+                color: rgb(196, 255, 197);
+                font-size: 10px;
+                background-color: rgb(0, 36, 1);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <img src="desktopwallpapers/mainback.jpg" width="1500px" height="900px">
+        <div class="maintext">MAKE <br> YOUR <br> DAY <br> SPECIAL</div>
+        <button class="btn1" style="top:200px " onclick="window.open('mobile.html'); ">
+            MOBILE WALLPAPERS
+        </button>
+        <button class="btn1" type="button" style="top:400px" onclick="window.open('desktop.html'); ">
+            DESKTOP WALLPAPERS
+        </button>
+        <button class="btn1" type="button" style="top : 600px" onclick="window.open('ringtone.html'); ">
+            RINGTONES/AUDIO...
+        </button>
+
+    </div>
+    </div>
+    <br><br><hr><br>
+    <br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 10 |
+                <a class="dwnlda" href="desktopwallpapers/img18.jpg" download=""> <button class="dwnld"> Download</button> </a>
+                <button class="dwnld" onclick="window.open( 'desktopwallpapers/img18.jpg');"> View</button>
+            </div>
+            <img src= "desktopwallpapers/img18.jpg" style="width:100%">
+
+             
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 10 |
+                <a class="dwnlda" href= "desktopwallpapers/img20.jpg" download=""> <button class="dwnld"> Download</button> </a>
+                <button class="dwnld" onclick="window.open( 'desktopwallpapers/img20.jpg');"> View</button>
+            </div>
+            <img src= "desktopwallpapers/img20.jpg" style="width:100%">
+
+             
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 10 |
+                <a class="dwnlda" href= "desktopwallpapers/img25.png" download=""> <button class="dwnld"> Download</button> </a>
+                <button class="dwnld" onclick="window.open( 'desktopwallpapers/img25.png');"> View</button>
+            </div>
+            <img src= "desktopwallpapers/img25.png" style="width:100%">
+
+             
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 10 |
+                <a class="dwnlda" href= "desktopwallpapers/img15.jpg" download=""> <button class="dwnld"> Download</button> </a>
+                <button class="dwnld" onclick="window.open( 'desktopwallpapers/img15.jpg');"> View</button>
+            </div>
+            <img src= "desktopwallpapers/img15.jpg" style="width:100%">
+
+             
+        </div>
+
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 10 |
+                <a class="dwnlda" href= "desktopwallpapers/img16.jpg" download=""> <button class="dwnld"> Download</button> </a>
+                <button class="dwnld" onclick="window.open( 'desktopwallpapers/img16.jpg');"> View</button>
+            </div>
+            <img src= "desktopwallpapers/img16.jpg" style="width:100%">
+
+             
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 10 |
+                <a class="dwnlda" href= "desktopwallpapers/img17.jpg" download=""> <button class="dwnld"> Download</button> </a>
+                <button class="dwnld" onclick="window.open( 'desktopwallpapers/img17.jpg');"> View</button>
+            </div>
+            <img src= "desktopwallpapers/img17.jpg" style="width:100%">
+
+             
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 10 |
+                <a class="dwnlda" href= "desktopwallpapers/img9.jpg" download=""> <button class="dwnld"> Download</button> </a>
+                <button class="dwnld" onclick="window.open( 'desktopwallpapers/img9.jpg');"> View</button>
+            </div>
+            <img src= "desktopwallpapers/img9.jpg" style="width:100%">
+
+             
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 10 |
+                <a class="dwnlda" href= "desktopwallpapers/img19.jpg" download=""> <button class="dwnld"> Download</button> </a>
+                <button class="dwnld" onclick="window.open( 'desktopwallpapers/img19.jpg');"> View</button>
+            </div>
+            <img src= "desktopwallpapers/img19.jpg" style="width:100%">
+
+             
+        </div>
+
+
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 10 |
+                <a class="dwnlda" href= "desktopwallpapers/img12.jpg" download=""> <button class="dwnld"> Download</button> </a>
+                <button class="dwnld" onclick="window.open( 'desktopwallpapers/img12.jpg');"> View</button>
+            </div>
+            <img src= "desktopwallpapers/img12.jpg" style="width:100%">
+
+             
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 10 |
+                <a class="dwnlda" href= "desktopwallpapers/img30.jpg" download=""> <button class="dwnld"> Download</button> </a>
+                <button class="dwnld" onclick="window.open( 'desktopwallpapers/img30.jpg');"> View</button>
+            </div>
+            <img src= "desktopwallpapers/img30.jpg" style="width:100%">
+
+             
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <div style="align-items: center;"><button class="dwnld" style="align-items: center;" onclick="window.open('desktop.html')">View More...</button></div>
+    <br><br>
+    <hr>
+ <br><br>
+ <footer class="section-p1">
+     <div class="col">
+         <img src="/logo/logo.png" class="logo logo2">
+         <h4>Contact</h4>
+         <p> <b>Address:</b> Veer Savarkar marg, Baba Nagar, Nanded (431602)</p>
+         <p> <b>Phone:</b> +918855930244, +919000800011</p>
+         <p> <b>Timming:</b> 09:00 - 21:00, MON-FRI</p>
+         <div class="follow">
+             <h4>Follow Us</h4>
+             <div class="icon">
+                 <a href="https://www.facebook.com/abhijeet.mahamune.58"></a><img src="/icon/facebook-logo-24.png">
+                 <a href="https://twitter.com/Abhijeetmahamu2"><img src="/icon/twitter-logo-24.png"></a>
+                 <a href="https://www.instagram.com/abhijeetmahamune/"><img src="/icon/instagram-logo-24.png"></a>
+                 <a href="#"><img src="/icon/pinterest-logo-24.png"></a>
+                 <a href="https://www.youtube.com/channel/UC6VzmNlCdtBjWhxea3_lpOQ"><img
+                         src="/icon/youtube-logo-24.png"></a>
+
+             </div>
+         </div>
+     </div>
+
+     <div class="col">
+         <h4>About</h4>
+         <a href="#">About Us</a>
+         <a href="#">Delivery Information</a>
+         <a href="#">Privacy and Policy</a>
+         <a href="#">Terms and Conditions</a>
+         <a href="#">Contact Us</a>
+     </div>
+
+     <div class="col">
+         <h4>My Accounts</h4>
+         <a href="#">Sign In</a>
+         <a href="#">View Cart</a>
+         <a href="#">My Wishlist</a>
+         <a href="#">Tracks My Order</a>
+         <a href="#">Help</a>
+     </div>
+
+     <div class="col install">
+         <h4>More Like This</h4>
+         <p>Check our other web Pages</p>
+         <div class="row">
+             <img src="/pay/app.jpg">
+             <img src="/pay/play.jpg">
+
+         </div>
+ </footer>
+ <div class="copyright" align="center">
+     <p>© 2023, WalpaperHub - Online FREE Wallpapers </p>
+ </div>
+ <br><br>
+
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        mobshowSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000);         
+        }
+    </script>
+</body>
+
+</html>

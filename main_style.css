@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    background-color: #ffffff;
+}
+
+li,
+a,
+button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border: solid rgb(151, 0, 0) 5px;
+    border-radius: 100px;
+    box-shadow: rgba(151, 0, 0, 0.758) 10px 10px 15px;
+}
+
+#a1 {
+    align-items: center;
+    border: 30cm;
+    gap: 10px;
+
+}
+
+#div1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width:900px) {
+    .div1 {
+        flex-direction: column;
+    }
+
+    div {
+        flex-direction: column;
+
+    }
+}
+
+.a1 {
+    background-color: rgb(255, 255, 255);
+    border: solid 3px;
+
+
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-color: black;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.a1:hover {
+    color: rgb(151, 0, 0);
+    border-color: rgb(151, 0, 0);
+    background-color: rgb(255, 224, 224);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+hr {
+    color: rgb(151, 0, 0);
+    background-color: rgb(151, 0, 0);
+    height: 5px;
+}
+
+li {
+    border: #24252A;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    display: inline block;
+    list-style: none;
+    size: 20ch;
+}
+
+.nav_links li {
+    display: inline-flex;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3 ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    color: rgb(151, 0, 0);
+    border-color: rgb(151, 0, 0);
+    border-width: 3px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3 ease 0s;
+
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: rgb(151, 0, 0);
+    box-shadow: rgb(180, 55, 55) 3px 3px 5px;
+
+}
+
+.divs {
+    text-align: center;
+}
+
+
+
+img {
+    padding: 3px;
+
+    transition: all 0.5s ease-in 0.5s;
+    border-radius: 10px;
+    border-color: black;
+
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: rgb(151, 0, 0) 5px 5px 15px;
+
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0px 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo2 {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow img {
+    /* margin-top: 10px; */
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow h4 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+footer .install .row img {
+    border: 1px solid #d722a1;
+    border-radius: 5px;
+}
+
+footer .install img {
+    cursor: pointer;
+    margin: 10px 0px 15px 0;
+}
+
+footer .follow img:hover {
+    background-color: #cecdcd;
+    border-radius: 3px;
+}
+
+footer a:hover {
+    color: #d722a1;
+}
+
+
+
+/* slideshow */
+
+
+
+.mySlides {
+    display: none;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+.scrollbtn {
+    align-items: center;
+    background-color: none;
+    border: red 3px solid;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(255, 224, 224);
+    color: red;
+    box-shadow: #222 2px 2px 2px;
+    font-size: large;
+    position: relative;
+    left: 700px;
+}
